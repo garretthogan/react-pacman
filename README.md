@@ -2,7 +2,7 @@
 
 A classic Pacman game recreated in 3D using React Three Fiber, while maintaining the classic 2D feel with an orthographic camera.
 
-🎮 **[Play the game live on GitHub Pages!](https://YOUR_USERNAME.github.io/react-pacman/)**
+🎮 **[Play the game live on GitHub Pages!](https://garretthogan.github.io/react-pacman/)**
 
 ## Prerequisites
 

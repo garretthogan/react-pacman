@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+.game-ui {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+  z-index: 10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff0;
+  font-family: 'Courier New', monospace;
+  font-size: 48px;
+  z-index: 100;
+  text-align: center;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+.instructions {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  z-index: 10;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.controls-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(25, 25, 166, 0.9);
+  border: 3px solid #FFB897;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-family: 'Courier New', monospace;
+  z-index: 10;
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.controls-panel h3 {
+  margin: 0 0 15px 0;
+  font-size: 20px;
+  color: #FFFF00;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.control-item {
+  margin-bottom: 10px;
+}
+
+.control-item label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #FFB897;
+}
+
+.control-item input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+.control-item input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #FFFF00;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #FFB897;
+}
+
+.control-item input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #FFFF00;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #FFB897;
+}
+
+.control-value {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFF00;
+  text-align: center;
+  width: 100%;
+}
+
+.control-description {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+  line-height: 1.4;
+  text-align: center;
+  font-style: italic;
+}

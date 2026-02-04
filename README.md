@@ -2,6 +2,8 @@
 
 A classic Pacman game recreated in 3D using React Three Fiber, while maintaining the classic 2D feel with an orthographic camera.
 
+🎮 **[Play the game live on GitHub Pages!](https://YOUR_USERNAME.github.io/react-pacman/)**
+
 ## Prerequisites
 
 This project requires **Node.js 22 or higher**.
@@ -119,6 +121,38 @@ nvm use 22      # Switch to Node 22
 1. Make sure all dependencies are installed: `npm install`
 2. Check Node version: `node --version`
 3. Clear cache and reinstall: `rm -rf node_modules package-lock.json && npm install`
+
+## Deployment
+
+This project is configured to deploy to GitHub Pages.
+
+### Automatic Deployment (GitHub Actions)
+
+The project includes a GitHub Actions workflow that automatically builds and deploys to GitHub Pages when you push to the `main` or `master` branch.
+
+**Setup Steps:**
+
+1. Push your code to GitHub
+2. Go to your repository Settings → Pages
+3. Under "Build and deployment", set Source to "GitHub Actions"
+4. Push a commit to trigger the deployment
+5. Your site will be available at `https://YOUR_USERNAME.github.io/react-pacman/`
+
+### Manual Deployment
+
+You can also deploy manually using:
+
+```bash
+npm run deploy
+```
+
+This will build the project and push it to the `gh-pages` branch.
+
+**Note:** Make sure to update the `base` path in `vite.config.js` if your repository name is different from `react-pacman`:
+
+```javascript
+base: '/your-repo-name/',
+```
 
 ## License
 
